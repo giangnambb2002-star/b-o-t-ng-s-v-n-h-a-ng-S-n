@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Times New Roman', Times, 'Nimbus Roman No9 L', serif;
+    --font-display: 'Times New Roman', Times, serif;
+    --font-sans: Arial, Helvetica, 'Liberation Sans', sans-serif;
+  }
+
+  body {
+    background-color: #0c0a08;
+    color: #e5ded5;
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-serif, .font-serif-title {
+    font-family: var(--font-serif);
+    letter-spacing: 0.02em;
+  }
+
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  p, span, button, input, textarea, div {
+    font-family: var(--font-sans);
+  }
+}
+
+/* Custom scrollbar for museum archive */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0f0d0a;
+}
+::-webkit-scrollbar-thumb {
+  background: #3c2f21;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #644f38;
+}
+
+/* Subtle bronze radial glow */
+.bg-radial-bronze {
+  background: radial-gradient(circle at 50% 30%, rgba(197, 155, 39, 0.15) 0%, rgba(20, 16, 12, 0.95) 70%, #0c0a08 100%);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #fff2cc 0%, #dfb743 45%, #c59b27 75%, #8f6815 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-border-glow {
+  box-shadow: 0 0 25px -5px rgba(197, 155, 39, 0.25);
+}
+
+.bronze-pattern-grid {
+  background-image: radial-gradient(rgba(197, 155, 39, 0.08) 1px, transparent 1px);
+  background-size: 28px 28px;
+}

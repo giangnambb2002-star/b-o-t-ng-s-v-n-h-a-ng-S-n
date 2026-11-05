@@ -1,0 +1,8 @@
+{
+  "name": "Bảo Tàng Số Văn Hóa Đông Sơn",
+  "description": "Bảo tàng số chuyên sâu giới thiệu nền văn hóa Đông Sơn, nghệ thuật đúc đồng và di sản trống đồng Việt Nam với trải nghiệm trực quan và trợ lý AI.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
